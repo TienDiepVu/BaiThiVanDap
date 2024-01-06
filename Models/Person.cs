@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -13,5 +15,6 @@ namespace VuTienDiep_192.Models
 
         [DataType(DataType.Date)] 
         public DateTime DateOfBirth { get; set; }
+        public ICollection<PhoneNumber> PhoneNumbers { get; set; }
     }
 }

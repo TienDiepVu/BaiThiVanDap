@@ -4,7 +4,7 @@ namespace VuTienDiep_192.Data {
     public class ApplicationDbContext : DbContext {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {}
-        public List<Person> Person { get; set; }
-        public DbSet<VuTienDiep_192.Models.Person> Person_1 { get; set; } = default!;
+        public DbSet<Person> Person_1 { get; set; } 
+        public DbSet<VuTienDiep_192.Models.PhoneNumber> PhoneNumber { get; set; } = default!;
     }
 }
