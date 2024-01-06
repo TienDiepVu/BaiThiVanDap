@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\VuTienDiep_192.props" />
+</Project>
